@@ -1,0 +1,243 @@
+/*媒体查询*/
+@media (max-width:768px) {
+
+    /* 小屏 */
+    #main {
+        background: url(../img/bg.jpg) no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    .search-box {
+        margin: 0;
+    }
+
+    .inputDiv {
+        margin: 30px 20px 0;
+    }
+}
+
+@media (min-width:768px) {
+
+    /* 大屏 */
+    #main {
+        background: url("../img/bg.jpg") no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    .search-box {
+        margin: 20px 70px 0 70px;
+    }
+
+    .inputDiv {
+        margin: 30px 130px 0;
+
+    }
+}
+
+#main {
+    background-color: #f5f5f5;
+    margin: 0;
+}
+
+.checkBtn {
+    cursor: pointer;
+
+}
+
+.checkBtn::after {
+    content: '';
+    position: relative;
+    border: 8px solid;
+    border-color: olive transparent transparent transparent;
+    top: 13px;
+}
+
+.inputDiv {
+    position: relative;
+}
+
+.inputDiv input {
+    width: 100%;
+    height: 42px;
+    background-color: #F9F0DA;
+    color: #575757;
+}
+
+.inputDiv button {
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    padding: 2px;
+    background-color: #3245df;
+    cursor: pointer;
+    top: 8px;
+    right: 8px;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+
+}
+
+.inputDiv button:before {
+    content: "\f105";
+    font-family: FontAwesome;
+    color: #F9F0DA;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* logo */
+#logo {
+    margin: 0 auto;
+}
+
+#logo div {
+    margin: 0 auto;
+    width: 300px;
+}
+
+#img {
+    animation: fade-in;
+    animation-duration: 0.2s;
+    -webkit-animation: fade-in 0.2s;
+    width: 250px;
+}
+
+/* 侧边栏以及侧边栏按钮 */
+.menu ul {
+    padding: 0 10px;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.slidebtn {
+    border-radius: 50%;
+
+}
+
+.sidenav-btn {
+    color: black;
+    font-size: 14px;
+    margin: 2% 4%;
+    padding: 6px;
+    background-color: #E3E3E3;
+    border-radius: 5px;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    width: 42%;
+}
+
+.sidenav-btn:hover {
+    background-color: lightgray;
+}
+
+.sidenav-btn p {
+    margin: 0;
+    font-size: 10px;
+    text-align: center;
+    /* color: gray; */
+    color: #9B7624;
+}
+
+.menu ul a li {
+    float: left;
+}
+
+/* 书签 */
+li {
+    list-style: none;
+}
+
+a,
+a:hover,
+a:visited {
+    text-decoration: none;
+}
+
+.folder {
+    width: 100%;
+    display: block;
+    margin-top: 10px;
+    animation: fade-in;
+    animation-duration: 0.5s;
+
+}
+
+.folder-item {
+    margin-bottom: 10px;
+}
+
+.folder-item-box,
+.folder-item-img {
+    width: 50px;
+    margin: 0 auto;
+    border-radius: 38%;
+    transition: all .2s ease;
+}
+
+.folder-item-img:hover,
+.folder-item-img2:hover {
+    transform: translate3d(0, -3px, 0);
+    box-shadow: rgba(33, 33, 33, 0.75) 0 14px 12px -7px !important;
+}
+
+.folder-item-box p {
+    font-size: 12px;
+    color: #969696;
+    color: black;
+    width: 100%;
+    margin: 10px 0 0 0;
+    text-align: center;
+}
+
+/* 搜索引擎 */
+.folder-item2 {
+    margin-bottom: 20px;
+
+}
+
+.folder-item-img2 {
+    width: 42px;
+    margin: 0 auto;
+    border-radius: 38%;
+}
+
+.folder-item-box2 p {
+    font-size: 12px;
+    color: #969696;
+    width: 100%;
+    margin: 10px 0 0 0;
+    text-align: center;
+}
+
+/*导航*/
+.nav {
+    animation: fade-in;
+    animation-duration: 0.5s;
+    -webkit-animation: fade-in 0.5s;
+    width: 100%;
+    margin-top: 10px;
+    display: none;
+}
+
+/*动画*/
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    /*初始状态 透明度为0*/
+    40% {
+        opacity: 0;
+    }
+
+    /*过渡状态 透明度为0*/
+    100% {
+        opacity: 1;
+    }
+
+    /*结束状态 透明度为1*/
+}
